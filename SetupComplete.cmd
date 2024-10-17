@@ -10,8 +10,8 @@ cd /d %~dp0
 :: Move to the Bin subfolder
 cd Bin
 
-:: Import Policies
+:: Install Policies
 lgpo /s GSecurity.inf
 
-:: Registry
+:: Import Registry
 Reg import GSecurity.reg

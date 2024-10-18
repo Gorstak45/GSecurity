@@ -510,26 +510,32 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WirelessDisplay]
 "EnforcePinBasedPairing"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
 "RestrictAnonymous"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot]
+"AlternateShell"="svchost.exe"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
 "IRQ8Priority"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\cdrom]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHMODEM]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cdrom]
 "Autorun"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
 "Start"=dword:00000004
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dmwappushservice]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
 "Start"=dword:00000004
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\LanmanServer\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
 "AutoShareServer"=dword:00000000
 "Hidden"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "DisableTaskOffload"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power]

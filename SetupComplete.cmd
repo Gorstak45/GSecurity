@@ -15,3 +15,8 @@ lgpo /s GSecurity.inf
 
 :: Import Registry
 Reg import GSecurity.reg
+
+:: Execute msi files alphabetically
+for /f "tokens=*" %%A in ('dir /b /o:n *.msi') do (
+    msiexec /i "%%A" /quiet /norestart
+)
